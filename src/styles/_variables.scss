@@ -1,0 +1,52 @@
+// VARIABLES
+
+// Colors
+// Primary:
+$light-red: hsl(0, 100%, 67%);
+$light-red-transparency: hsl(0, 100%, 67%, 0.05);
+$orangey-yellow: hsl(39, 100%, 56%);
+$orangey-yellow-transparency: hsl(39, 100%, 56%, 0.05);
+$green-teal: hsl(166, 100%, 37%);
+$green-teal-transparency: hsl(166, 100%, 37%, 0.05);
+$cobalt-blue: hsl(234, 85%, 45%);
+$cobalt-blue-transparency: hsl(234, 85%, 45%, 0.05);
+
+// GRADIENTS
+// background
+$light-slate-blue: hsl(252, 100%, 67%);
+$light-royal-blue: hsl(241, 81%, 54%);
+// Circle
+$violet-blue: hsla(256, 72%, 46%, 1);
+$persian-blue: hsla(241, 72%, 46%, 0);
+
+// Neutral:
+
+$white: hsl(0, 0%, 100%);
+$pale-blue: hsl(221, 100%, 96%);
+$pale-blue-alpha: hsla(221, 100%, 96%, 0.7);
+
+$light-lavender: hsl(241, 100%, 89%);
+$dark-gray-blue: hsl(224, 30%, 27%);
+
+//Fonts
+$font-size-h1: 1.5rem;
+$font-size-h2: 1.9rem;
+$font-size-h1-small: 1.2rem;
+$font-size-h2-small: 1.6rem;
+
+// Mixin para aplicar los tamaños de fuente
+@mixin font-sizes($h1-size, $h2-size) {
+	h1 {
+		font-size: $h1-size;
+	}
+
+	h2 {
+		font-size: $h2-size;
+	}
+}
+
+// Mixins
+@mixin gradient($direction, $color1, $color2) {
+	background-color: $color1;
+	background: linear-gradient($direction, $color1, $color2);
+}

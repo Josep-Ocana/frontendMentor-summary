@@ -1,0 +1,84 @@
+// Placeholders
+%sect {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 30px;
+	flex-basis: 50%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-wrap: wrap;
+	padding: 2.3rem;
+}
+
+%sect-result {
+	@include gradient(to bottom, $light-slate-blue, $light-royal-blue);
+}
+
+// Summary
+%sect-summary {
+	padding-inline: 2.5rem;
+	background-color: $white;
+}
+
+.areas {
+	width: 100%;
+	margin-bottom: 0.8rem;
+}
+
+%row {
+	display: flex;
+	justify-content: space-between;
+	padding: 14px;
+	font-weight: 700;
+	border-radius: 0.6rem;
+
+	i {
+		display: grid;
+		place-content: center;
+	}
+
+	p {
+		margin-left: 0.7rem;
+	}
+
+	.value {
+		margin-left: auto;
+		margin-right: 0.5rem;
+		font-weight: bold;
+	}
+
+	.total {
+		opacity: 0.3;
+	}
+}
+
+%row:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+%row-reaction {
+	background: $light-red-transparency;
+	p {
+		color: $light-red;
+	}
+}
+%row-memory {
+	background: $orangey-yellow-transparency;
+	p {
+		color: $orangey-yellow;
+	}
+}
+%row-verbal {
+	background: $green-teal-transparency;
+	p {
+		color: $green-teal;
+	}
+}
+%row-visual {
+	background: $cobalt-blue-transparency;
+	p {
+		color: $cobalt-blue;
+	}
+}
