@@ -87,21 +87,21 @@ main {
 .row {
 	@extend %row;
 
-	&-reaction {
+	&-Reaction {
 		@extend %row;
-		@extend %row-reaction;
+		@extend %row-Reaction;
 	}
-	&-memory {
+	&-Memory {
 		@extend %row;
-		@extend %row-memory;
+		@extend %row-Memory;
 	}
-	&-verbal {
+	&-Verbal {
 		@extend %row;
-		@extend %row-verbal;
+		@extend %row-Verbal;
 	}
-	&-visual {
+	&-Visual {
 		@extend %row;
-		@extend %row-visual;
+		@extend %row-Visual;
 	}
 }
 

@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	entry: './src/index.js',
@@ -24,6 +25,10 @@ module.exports = {
 					},
 				],
 			},
+			{
+				test: /\.json$/,
+				type: 'asset/resource', // Maneja archivos JSON como recursos
+			},
 		],
 	},
 	plugins: [
@@ -33,6 +38,9 @@ module.exports = {
 			inject: 'body', // Inyectar los archivos generados al final del body
 		}),
 		new CleanWebpackPlugin(),
+		new CopyWebpackPlugin({
+			patterns: [{ from: './src/data.json', to: '' }],
+		}),
 	],
 	devtool: 'source-map',
 	mode: 'development', // Cambiar a modo desarrollo
