@@ -2,6 +2,7 @@ import './styles/main.scss';
 
 // Selectors
 const areasDiv = document.querySelector('.areas');
+const totalScore = document.querySelector('.total-score');
 
 console.log('Webpack funcionando correctamente');
 
@@ -12,14 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
 function cargarDatos() {
 	const url = './data.json';
 	fetch(url)
-		.then(respuesta => respuesta.json())
-		.then(resultado => mostrarHTML(resultado));
+		.then(response => response.json())
+		.then(result => mostrarHTML(result));
 }
 
-function mostrarHTML(resultado) {
-	resultado.forEach(categorias => {
-		console.log(categorias);
-		const { category, score, icon } = categorias;
+function mostrarHTML(categories) {
+	let total = 0;
+	categories.forEach(subject => {
+		console.log(subject);
+		const { category, score, icon } = subject;
 
 		const row = document.createElement('DIV');
 		row.classList.add(`row-${category}`);
@@ -35,10 +37,17 @@ function mostrarHTML(resultado) {
 		totalSpan.classList.add('total');
 		totalSpan.textContent = ' / 100';
 
+		// Calculate total
+		total = Math.round(total + score / categories.length);
+		console.log(total);
+
+		// Add to HTML
 		row.appendChild(imageIcon);
 		row.appendChild(categoryName);
 		row.appendChild(scoreSpan);
 		row.appendChild(totalSpan);
 		areasDiv.appendChild(row);
 	});
+
+	totalScore.textContent = total;
 }

@@ -1,0 +1,10 @@
+# netlify.toml
+
+[build]
+  command = "npm run build"   # Comando para construir la aplicación
+  publish = "dist"            # Carpeta que contiene los archivos construidos
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

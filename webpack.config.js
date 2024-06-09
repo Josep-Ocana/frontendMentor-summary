@@ -39,11 +39,14 @@ module.exports = {
 		}),
 		new CleanWebpackPlugin(),
 		new CopyWebpackPlugin({
-			patterns: [{ from: './src/data.json', to: '' }],
+			patterns: [
+				{ from: './src/data.json', to: '' },
+				{ from: 'src/assets/images', to: 'assets/images' },
+			],
 		}),
 	],
 	devtool: 'source-map',
-	mode: 'development', // Cambiar a modo desarrollo
+	mode: 'production', // Cambiar a modo desarrollo
 	devServer: {
 		static: {
 			directory: path.join(__dirname, 'dist'),
