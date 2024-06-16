@@ -162,6 +162,7 @@ main {
 		width: 100%;
 		flex-basis: auto;
 		margin-bottom: 0;
+		height: 100%;
 	}
 
 	%sect {
@@ -181,7 +182,7 @@ main {
 	}
 
 	.attribution {
-		position: static;
+		position: relative;
 		flex-direction: column;
 		align-items: center;
 	}

@@ -20,7 +20,6 @@ function cargarDatos() {
 function mostrarHTML(categories) {
 	let total = 0;
 	categories.forEach(subject => {
-		console.log(subject);
 		const { category, score, icon } = subject;
 
 		const row = document.createElement('DIV');
