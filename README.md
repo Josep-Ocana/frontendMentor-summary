@@ -6,17 +6,17 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ## Table of contents
 
--   [Overview](#overview)
-    -   [The challenge](#the-challenge)
-    -   [Screenshot](#screenshot)
-    -   [Links](#links)
--   [My process](#my-process)
-    -   [Built with](#built-with)
-    -   [What I learned](#what-i-learned)
-    -   [Continued development](#continued-development)
-    -   [Useful resources](#useful-resources)
--   [Author](#author)
--   [Acknowledgments](#acknowledgments)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -24,9 +24,9 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 Users should be able to:
 
--   View the optimal layout for the interface depending on their device's screen size
--   See hover and focus states for all interactive elements on the page
--   **Bonus**: Use the local JSON data to dynamically populate the content
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+- **Bonus**: Use the local JSON data to dynamically populate the content
 
 ### Screenshot
 
@@ -44,17 +44,17 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [@Josep-Ocana-results-summary-project](https://github.com/Josep-Ocana/frontendMentor-summary)
--   Live Site URL: [@Josep-Ocana-results-summary-page](https://frontendmentor-josep-summary.netlify.app/)
+- Solution URL: [@Josep-Ocana-results-summary-project](https://github.com/Josep-Ocana/frontendMentor-summary)
+- Live Site URL: [@Josep-Ocana-results-summary-page](https://frontendmentor-josep-summary.netlify.app/)
 
 ## My process
 
 ### Built with
 
--   Semantic HTML5 markup
--   Sass
--   Flexbox
--   Node.js
+- Semantic HTML5 markup
+- Sass
+- Flexbox
+- Node.js
 
 ### What I learned
 
@@ -87,17 +87,17 @@ I realised that I have to improve my Sass skills and node.js and the manner to t
 
 ### Useful resources
 
--   [chat GPT](https://chatgpt.com) - I use this tool for two reasons: first I find what I am looking for, and second I am learning how use it because it is going to be essential tool in our future.
+- [chat GPT](https://chatgpt.com) - I use this tool for two reasons: first I find what I am looking for, and second I am learning how use it because it is going to be essential tool in our future.
 
 ## Author
 
--   Frontend Mentor - [@Josep-Ocana](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Josep-Ocana](https://www.frontendmentor.io/profile/Josep-Ocana)
 
 ## Acknowledgments
 
--   I would like to thank frontend mentor for doing these exercises that help us to improve and refine our code.
+- I would like to thank frontend mentor for doing these exercises that help us to improve and refine our code.
 
--   I would like to thank web pages that teaching us so much , and all developers who help people become better developers in many web pages like [MDN Web Docs](https://developer.mozilla.org), [Stack Overflow](https://stackoverflow.com/),
-    [w3schools.com](https://www.w3schools.com/), etc. Thanks for offering so much support us
+- I would like to thank web pages that teaching us so much , and all developers who help people become better developers in many web pages like [MDN Web Docs](https://developer.mozilla.org), [Stack Overflow](https://stackoverflow.com/),
+  [w3schools.com](https://www.w3schools.com/), etc. Thanks for offering so much support us
 
--   I would also like to thank my family for motivating me and for his support.😘
+- I would also like to thank my family for motivating me and for his support.😘
